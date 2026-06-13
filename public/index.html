@@ -371,17 +371,22 @@
         </div>
       </div>
 
-      <!-- Optional contact form — works on Cloudflare Pages with a Formspree/Web3Forms endpoint.
-           Replace action URL with yours, or delete this form if you only want call/email. -->
-      <form class="contact__form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <!-- Contact form powered by Web3Forms (https://web3forms.com).
+           Submissions email to the address tied to the access_key below. -->
+      <form class="contact__form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b2b78ab8-f9b5-47ed-b701-a6eceb68f715" />
+        <input type="hidden" name="subject" value="New inquiry — 2140 192nd Ave SE, Sammamish" />
+        <input type="hidden" name="from_name" value="modernsammamish.com" />
         <div class="form__row">
           <input type="text" name="name" placeholder="Your name" required />
           <input type="email" name="email" placeholder="Your email" required />
         </div>
         <input type="tel" name="phone" placeholder="Phone (optional)" />
         <textarea name="message" rows="4" placeholder="I'd like to schedule a showing..."></textarea>
-        <input type="hidden" name="_subject" value="New inquiry — 2140 192nd Ave SE" />
+        <!-- Honeypot: hidden from people, catches spam bots -->
+        <input type="checkbox" name="botcheck" class="visually-hidden" style="display:none" tabindex="-1" autocomplete="off" />
         <button type="submit" class="btn btn--gold btn--full">Send Inquiry</button>
+        <p class="form__status" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>

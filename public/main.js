@@ -82,4 +82,35 @@
       if (e.key === "Escape" && box.classList.contains("is-open")) close();
     });
   }
+
+  // Contact form (Web3Forms) — submit via fetch, show inline status
+  var form = document.querySelector(".contact__form");
+  if (form) {
+    var status = form.querySelector(".form__status");
+    var submitBtn = form.querySelector('button[type="submit"]');
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (status) { status.className = "form__status"; status.textContent = "Sending…"; }
+      if (submitBtn) { submitBtn.disabled = true; }
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      })
+        .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+        .then(function (r) {
+          if (r.ok) {
+            if (status) { status.classList.add("is-ok"); status.textContent = "Thank you — your message has been sent. We'll be in touch shortly."; }
+            form.reset();
+          } else {
+            if (status) { status.classList.add("is-err"); status.textContent = (r.data && r.data.message) || "Something went wrong. Please call (206) 939-8745."; }
+          }
+        })
+        .catch(function () {
+          if (status) { status.classList.add("is-err"); status.textContent = "Network error. Please call (206) 939-8745."; }
+        })
+        .finally(function () { if (submitBtn) { submitBtn.disabled = false; } });
+    });
+  }
 })();
