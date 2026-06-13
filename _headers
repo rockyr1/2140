@@ -1,0 +1,15 @@
+# Cloudflare Pages headers — caching + light security hardening
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-Frame-Options: SAMEORIGIN
+
+# Long-cache static assets (images/video/fonts)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Always revalidate HTML so listing edits go live immediately
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

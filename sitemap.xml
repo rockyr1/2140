@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace modernsammamish.com with your real domain. Update lastmod when you change the page. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://modernsammamish.com/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://modernsammamish.com/assets/og-image.jpg</image:loc>
+      <image:title>2140 192nd Ave SE, Sammamish WA — Custom Luxury Modern Home</image:title>
+      <image:caption>Front exterior of the custom luxury modern home at 2140 192nd Ave SE, Sammamish WA 98075</image:caption>
+    </image:image>
+  </url>
+</urlset>
