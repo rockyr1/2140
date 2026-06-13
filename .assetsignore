@@ -1,0 +1,7 @@
+# Files NOT served as part of the public site
+wrangler.toml
+.assetsignore
+README.md
+assets/README.md
+.git
+.gitignore
