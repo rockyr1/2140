@@ -1,9 +1,0 @@
-# Cloudflare Worker — serves this folder as a static site (Workers Static Assets).
-# Matches the existing Worker named "2140". Deploy: `npx wrangler deploy`
-name = "2140"
-compatibility_date = "2026-06-13"
-
-[assets]
-directory = "."
-# Serve /404.html for unknown paths
-not_found_handling = "404-page"
