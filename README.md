@@ -24,8 +24,8 @@ Search the project for these and replace them. They're all clearly marked.
 > Tip: in VS Code, press **Ctrl+Shift+H** (Find & Replace across files) to swap
 > `REPLACE_DOMAIN.com` everywhere in one shot.
 
-The **listing agent (Kimberly Freutel, Redfin)** contact info is already wired in. If that
-changes, update the Contact section and the JSON-LD `seller` block in `index.html`.
+The contact (**Sunayana Kannur · (206) 939-8745**) is already wired in. If that changes,
+update the Contact section and the JSON-LD `seller` block in `index.html`.
 
 ### Add your photos & drone video
 See [`assets/README.md`](assets/README.md) for the exact filenames and sizes to drop in.
