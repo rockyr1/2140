@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace modernsammamish.com with your real domain. Update lastmod when you change the page. -->
+<!-- Update lastmod when you change the page. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://modernsammamish.com/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -12,5 +13,11 @@
       <image:title>2140 192nd Ave SE, Sammamish WA — Custom Luxury Modern Home</image:title>
       <image:caption>Front exterior of the custom luxury modern home at 2140 192nd Ave SE, Sammamish WA 98075</image:caption>
     </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/-GIAR-CgW54/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Aerial Drone Tour — 2140 192nd Ave SE, Sammamish, WA</video:title>
+      <video:description>Aerial drone tour of a custom luxury modern home for sale in Sammamish, WA — 5 bed + office, 3 bath, 3,297 sq ft on a 0.56-acre lot near Lake Sammamish.</video:description>
+      <video:player_loc>https://www.youtube.com/embed/-GIAR-CgW54</video:player_loc>
+    </video:video>
   </url>
 </urlset>
